@@ -48,34 +48,14 @@ English Input → GRU Encoder → All Hidden States → Attention → Context Ve
 
 | Model | Accuracy | Training Time | Parameters |
 |-------|----------|---------------|------------|
-| **Baseline GRU** | ~85% | Faster | Fewer |
-| **GRU + Attention** | ~92% | Moderate | More |
+| **Baseline GRU** | ~84% | Faster | Fewer |
+| **GRU + Attention** | ~90% | Moderate | More |
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 ```bash
 pip install torch torchvision numpy pandas matplotlib seaborn
-```
-
-### Quick Start
-```python
-# Load the trained model
-net = torch.load('model.pt')
-
-# Transliterate a word
-result = test(net, 'INDIA')
-# Output: INDIA-इंडिया
-```
-
-## 📁 Project Structure
-
-```
-├── encoder_decoder.py         # Main implementation
-├── NEWS2012-Training-EnHi-*.xml  # Training dataset
-├── NEWS2012-Ref-EnHi-*.xml      # Test dataset
-├── model.pt                   # Saved model weights
-└── README.md                  # This file
 ```
 
 ## 🧠 Technical Details
